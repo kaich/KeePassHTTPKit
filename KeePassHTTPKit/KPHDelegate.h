@@ -22,13 +22,13 @@ static NSString *const KPHCustomFieldPrefix = @"KPH: ";
 
 @required
 
-- (NSString *)server:(KPHServer *)server labelForKey:(NSString *)key;
-- (NSString *)server:(KPHServer *)server keyForLabel:(NSString *)label;
+- (nullable NSString *)server:(KPHServer *)server labelForKey:(NSString *)key;
+- (nullable NSString *)server:(KPHServer *)server keyForLabel:(NSString *)label;
 - (NSArray<KPHResponseEntry *> *)server:(KPHServer *)server entriesForURL:(NSString *)url;
 - (NSArray<KPHResponseEntry *> *)allEntriesForServer:(KPHServer *)server;
 - (void)server:(KPHServer *)server setUsername:(NSString *)username andPassword:(NSString *)password forURL:(NSString *)url withUUID:(NSString *)uuid;
-- (NSString *)clientHashForServer:(KPHServer *)server;
-- (NSString *)generatePasswordForServer:(KPHServer *)server;
+- (nullable NSString *)clientHashForServer:(KPHServer *)server;
+- (nullable NSString *)generatePasswordForServer:(KPHServer *)server;
 
 NS_ASSUME_NONNULL_END
 
