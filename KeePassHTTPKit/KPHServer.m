@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 James Hurst. All rights reserved.
 //
 
-#import <GCDWebServers/GCDWebServers.h>
+#import <GCDWebServer/GCDWebServer-umbrella.h>
 
 #import "KPHServer.h"
 #import "KPHRequest.h"
