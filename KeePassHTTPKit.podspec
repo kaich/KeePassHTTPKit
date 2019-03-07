@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
    s.author = 'mp'
 
    s.source = { :git => 'https://github.com/kaich/KeePassHTTPKit.git', :tag => s.version }
-   s.source_files = 'Source/*.{h,m}'
+   s.source_files = 'KeePassHTTPKit/*.{h,m}'
 
    s.swift_version = '4.2'
 
