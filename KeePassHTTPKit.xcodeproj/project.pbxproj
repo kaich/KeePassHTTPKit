@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C0A25131BFA679D007DFDBA /* GCDWebServers.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CDE593D1BF9E87200C7AF5B /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CCAC3921BF9C30300EA4639 /* KeePassHTTPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCAC3911BF9C30300EA4639 /* KeePassHTTPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CCAC3991BF9C30300EA4639 /* KeePassHTTPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCAC38E1BF9C30300EA4639 /* KeePassHTTPKit.framework */; };
 		4CCAC39E1BF9C30300EA4639 /* KeePassHTTPKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAC39D1BF9C30300EA4639 /* KeePassHTTPKitTests.m */; };
@@ -40,9 +39,10 @@
 		4CDE593A1BF9E2D700C7AF5B /* KPHServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE591D1BF9E2D700C7AF5B /* KPHServer.m */; };
 		4CDE593B1BF9E2D700C7AF5B /* KPHUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDE591E1BF9E2D700C7AF5B /* KPHUtils.h */; };
 		4CDE593C1BF9E2D700C7AF5B /* KPHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE591F1BF9E2D700C7AF5B /* KPHUtils.m */; };
-		4CDE593E1BF9E87200C7AF5B /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDE593D1BF9E87200C7AF5B /* GCDWebServers.framework */; };
 		4D7F3703250A0CCA004C38AB /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E1DB21EF0467000128BA9 /* JSONModel.framework */; };
 		4D7F3704250A0CCA004C38AB /* JSONModel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C4E1DB21EF0467000128BA9 /* JSONModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D7F3705250A0ED2004C38AB /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDE593D1BF9E87200C7AF5B /* GCDWebServers.framework */; };
+		4D7F3706250A0ED2004C38AB /* GCDWebServers.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CDE593D1BF9E87200C7AF5B /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4D7F3704250A0CCA004C38AB /* JSONModel.framework in CopyFiles */,
-				4C0A25131BFA679D007DFDBA /* GCDWebServers.framework in CopyFiles */,
+				4D7F3706250A0ED2004C38AB /* GCDWebServers.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D7F3703250A0CCA004C38AB /* JSONModel.framework in Frameworks */,
-				4CDE593E1BF9E87200C7AF5B /* GCDWebServers.framework in Frameworks */,
+				4D7F3705250A0ED2004C38AB /* GCDWebServers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

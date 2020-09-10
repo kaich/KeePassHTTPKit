@@ -23,7 +23,7 @@ static NSString *const kKPHRequestGeneratePassword = @"generate-password";
 @property (nonatomic, strong) NSString *RequestType;
 
 /// Sort selection by best URL matching for given hosts
-@property (nonatomic, assign) BOOL SortSelection;
+@property (nonatomic, assign) NSString<Optional> *SortSelection;
 
 /// Trigger unlock of database even if feature is disabled in KPH (because of user interaction to fill-in)
 @property (nonatomic, strong) NSString<Optional> *TriggerUnlock;

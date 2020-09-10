@@ -36,7 +36,7 @@
   if(!entries) {
     return;
   }
-  if (request.SortSelection)
+  if ([request.SortSelection isEqualToString:@"true"])
   {
     [KPHUtils sortEntries:entries
                   withURL:[KPHUtils decryptString:request.Url withAES:aes]

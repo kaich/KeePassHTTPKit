@@ -10,8 +10,5 @@
 
 @implementation KPHRequest
 
-+ (BOOL)propertyIsOptional:(NSString*)propertyName {
-  return [propertyName isEqualToString:NSStringFromSelector(@selector(SortSelection))];
-}
 
 @end
