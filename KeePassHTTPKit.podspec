@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
    s.osx.deployment_target = "10.12"
    
    s.dependency 'GCDWebServer'
-   s.dependency 'JSONModel'
+   s.dependency 'ObjectMapper'
 end
 
