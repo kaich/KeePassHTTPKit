@@ -16,7 +16,7 @@
 + (NSString *)performOpertaion:(CCOperation)op withAES:(KPHAESConfig *)aes onString:(NSString *)input base64input:(BOOL)base64input base64output:(BOOL)base64output;
 + (NSString *)decryptString:(NSString *)input withAES:(KPHAESConfig *)aes;
 + (NSString *)encryptString:(NSString *)input withAES:(KPHAESConfig *)aes;
-+ (NSArray<KPHResponseEntry, Optional> *)encryptEntries:(NSArray *)entries withAES:(KPHAESConfig *)aes;
++ (NSArray<KPHResponseEntry> *)encryptEntries:(NSArray *)entries withAES:(KPHAESConfig *)aes;
 
 + (void)sortEntries:(NSArray *)entries withURL:(NSString *)url withSubmitURL:(NSString *)submitUrl;
 

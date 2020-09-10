@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C0A25131BFA679D007DFDBA /* GCDWebServers.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CDE593D1BF9E87200C7AF5B /* GCDWebServers.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4C4E1DB31EF0467000128BA9 /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E1DB21EF0467000128BA9 /* JSONModel.framework */; };
-		4C7A19B21F8CBEDD00C4D20B /* JSONModel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C4E1DB21EF0467000128BA9 /* JSONModel.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4C0A25131BFA679D007DFDBA /* GCDWebServers.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CDE593D1BF9E87200C7AF5B /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CCAC3921BF9C30300EA4639 /* KeePassHTTPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCAC3911BF9C30300EA4639 /* KeePassHTTPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CCAC3991BF9C30300EA4639 /* KeePassHTTPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCAC38E1BF9C30300EA4639 /* KeePassHTTPKit.framework */; };
 		4CCAC39E1BF9C30300EA4639 /* KeePassHTTPKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAC39D1BF9C30300EA4639 /* KeePassHTTPKitTests.m */; };
@@ -43,6 +41,8 @@
 		4CDE593B1BF9E2D700C7AF5B /* KPHUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDE591E1BF9E2D700C7AF5B /* KPHUtils.h */; };
 		4CDE593C1BF9E2D700C7AF5B /* KPHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE591F1BF9E2D700C7AF5B /* KPHUtils.m */; };
 		4CDE593E1BF9E87200C7AF5B /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDE593D1BF9E87200C7AF5B /* GCDWebServers.framework */; };
+		4D7F36FE2509F2FB004C38AB /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7F36FD2509F2FB004C38AB /* Mantle.framework */; };
+		4D7F36FF2509F2FB004C38AB /* Mantle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D7F36FD2509F2FB004C38AB /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4C0A25131BFA679D007DFDBA /* GCDWebServers.framework in CopyFiles */,
-				4C7A19B21F8CBEDD00C4D20B /* JSONModel.framework in CopyFiles */,
+				4D7F36FF2509F2FB004C38AB /* Mantle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +107,7 @@
 		4CDE591E1BF9E2D700C7AF5B /* KPHUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPHUtils.h; sourceTree = "<group>"; };
 		4CDE591F1BF9E2D700C7AF5B /* KPHUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPHUtils.m; sourceTree = "<group>"; };
 		4CDE593D1BF9E87200C7AF5B /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = Carthage/Build/Mac/GCDWebServers.framework; sourceTree = "<group>"; };
+		4D7F36FD2509F2FB004C38AB /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/Mac/Mantle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4E1DB31EF0467000128BA9 /* JSONModel.framework in Frameworks */,
 				4CDE593E1BF9E87200C7AF5B /* GCDWebServers.framework in Frameworks */,
+				4D7F36FE2509F2FB004C38AB /* Mantle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +139,7 @@
 				4CCAC3901BF9C30300EA4639 /* KeePassHTTPKit */,
 				4CCAC39C1BF9C30300EA4639 /* KeePassHTTPKitTests */,
 				4CCAC38F1BF9C30300EA4639 /* Products */,
+				4D7F36FC2509F2FB004C38AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +213,14 @@
 				4CDE59141BF9E2D700C7AF5B /* KPHTestAssociateHandler.m */,
 			);
 			path = Handlers;
+			sourceTree = "<group>";
+		};
+		4D7F36FC2509F2FB004C38AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D7F36FD2509F2FB004C38AB /* Mantle.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +312,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 4CCAC3841BF9C30300EA4639;

@@ -51,8 +51,8 @@
   return [KPHUtils performOpertaion:kCCEncrypt withAES:aes onString:input base64input:NO base64output:YES];
 }
 
-+ (NSArray<KPHResponseEntry, Optional> *)encryptEntries:(NSArray *)entries withAES:(KPHAESConfig *)aes {
-  NSMutableArray<KPHResponseEntry, Optional> *encryptedEntries = entries.mutableCopy;
++ (NSArray<KPHResponseEntry> *)encryptEntries:(NSArray *)entries withAES:(KPHAESConfig *)aes {
+  NSMutableArray<KPHResponseEntry> *encryptedEntries = entries.mutableCopy;
   
   for (KPHResponseEntry *entry in encryptedEntries) {
     entry.Name = [KPHUtils encryptString:entry.Name withAES:aes];
